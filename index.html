@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header" data-scroll-section>
+      <nav class="nav-container">
+        <div class="logo" data-scroll data-scroll-speed="1.5">
+          <div class="logo-glitch">
+            <span class="logo-text main">SHOPIFY</span>
+            <span class="logo-text blur-1">SHOPIFY</span>
+            <span class="logo-text blur-2">SHOPIFY</span>
+          </div>
+          <div class="logo-accent"></div>
+        </div>
+        <ul class="nav-links">
+          <li class="nav-item" data-scroll data-scroll-speed="1.2">
+            <a href="#" class="nav-link magnetic">
+              <span class="nav-text">Home</span>
+              <div class="nav-line"></div>
+              <div class="nav-glow"></div>
+            </a>
+          </li>
+          <li class="nav-item" data-scroll data-scroll-speed="1.4">
+            <a href="#" class="nav-link magnetic">
+              <span class="nav-text">Shop</span>
+              <div class="nav-line"></div>
+              <div class="nav-glow"></div>
+            </a>
+          </li>
+          <li class="nav-item" data-scroll data-scroll-speed="1.6">
+            <a href="#" class="nav-link magnetic">
+              <span class="nav-text">Categories</span>
+              <div class="nav-line"></div>
+              <div class="nav-glow"></div>
+            </a>
+          </li>
+          <li class="nav-item" data-scroll data-scroll-speed="1.8">
+            <a href="#" class="nav-link magnetic">
+              <span class="nav-text">About</span>
+              <div class="nav-line"></div>
+              <div class="nav-glow"></div>
+            </a>
+          </li>
+        </ul>
+        <div class="nav-icons" data-scroll data-scroll-speed="2">
+          <a href="#" class="cart-icon hover-float">
+            <span class="icon-wrapper">
+              <svg viewBox="0 0 24 24" class="icon icon-3d">
+                <path
+                  d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
+                />
+              </svg>
+              <span class="cart-count pulse">0</span>
+              <div class="icon-glow"></div>
+            </span>
+          </a>
+          <a href="#" class="account-icon hover-float">
+            <span class="icon-wrapper">
+              <svg viewBox="0 0 24 24" class="icon icon-3d">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                />
+              </svg>
+              <div class="icon-glow"></div>
+            </span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" data-scroll-section>
+        <div class="hero-content">
+          <h1 class="hero-title split-text" data-scroll data-scroll-speed="3">
+            Discover Trendy Collections
+          </h1>
+          <p
+            class="hero-subtitle reveal-text"
+            data-scroll
+            data-scroll-speed="2"
+          >
+            Shop the latest fashion trends with our curated selection
+          </p>
+          <a
+            href="#"
+            class="cta-button magnetic"
+            data-scroll
+            data-scroll-speed="1"
+          >
+            <span>Shop Now</span>
+            <div class="button-accent"></div>
+          </a>
+        </div>
+        <div class="hero-background">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+        </div>
+      </section>
+
+      <section class="featured-products" data-scroll-section>
+        <h2 class="section-title reveal-text" data-scroll>Featured Products</h2>
+        <div class="product-grid">
+          <div
+            class="product-card parallax-card"
+            data-scroll
+            data-scroll-speed="1"
+          >
+            <div class="product-image">
+              <div class="image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+                  alt="Premium Watch"
+                  class="fade-in"
+                  data-scroll
+                />
+                <div class="image-overlay"></div>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title reveal-text" data-scroll>
+                Premium Watch
+              </h3>
+              <p class="price fade-in" data-scroll>$99.99</p>
+              <button class="add-to-cart magnetic" data-scroll>
+                <span>Add to Cart</span>
+                <div class="button-accent"></div>
+              </button>
+            </div>
+          </div>
+          <div
+            class="product-card parallax-card"
+            data-scroll
+            data-scroll-speed="1.2"
+          >
+            <div class="product-image">
+              <div class="image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+                  alt="Premium Headphones"
+                  class="fade-in"
+                  data-scroll
+                />
+                <div class="image-overlay"></div>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title reveal-text" data-scroll>
+                Premium Headphones
+              </h3>
+              <p class="price fade-in" data-scroll>$149.99</p>
+              <button class="add-to-cart magnetic" data-scroll>
+                <span>Add to Cart</span>
+                <div class="button-accent"></div>
+              </button>
+            </div>
+          </div>
+          <div
+            class="product-card parallax-card"
+            data-scroll
+            data-scroll-speed="1.4"
+          >
+            <div class="product-image">
+              <div class="image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+                  alt="Premium Sneakers"
+                  class="fade-in"
+                  data-scroll
+                />
+                <div class="image-overlay"></div>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title reveal-text" data-scroll>
+                Premium Sneakers
+              </h3>
+              <p class="price fade-in" data-scroll>$199.99</p>
+              <button class="add-to-cart magnetic" data-scroll>
+                <span>Add to Cart</span>
+                <div class="button-accent"></div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories" data-scroll-section>
+        <h2 class="section-title reveal-text" data-scroll>Shop by Category</h2>
+        <div class="category-grid">
+          <div class="category-card" data-scroll>
+            <div class="card-inner">
+              <img
+                src="https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?w=400&h=300&fit=crop"
+                alt="Men's Fashion"
+                width="400"
+                height="300"
+                style="object-fit: cover"
+              />
+              <div class="category-overlay"></div>
+              <h3 class="category-title">Men's Fashion</h3>
+            </div>
+          </div>
+          <div class="category-card" data-scroll>
+            <div class="card-inner">
+              <img
+                src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=400&h=300&fit=crop"
+                alt="Women's Fashion"
+                width="400"
+                height="300"
+                style="object-fit: cover"
+              />
+              <div class="category-overlay"></div>
+              <h3 class="category-title">Women's Fashion</h3>
+            </div>
+          </div>
+          <div class="category-card" data-scroll>
+            <div class="card-inner">
+              <img
+                src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?w=400&h=300&fit=crop"
+                alt="Accessories"
+                width="400"
+                height="300"
+                style="object-fit: cover"
+              />
+              <div class="category-overlay"></div>
+              <h3 class="category-title">Accessories</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter" data-scroll-section>
+        <div class="newsletter-content" data-scroll>
+          <h2 class="reveal-text">Subscribe to Our Newsletter</h2>
+          <p class="fade-in">
+            Get the latest updates on new products and upcoming sales
+          </p>
+          <form class="newsletter-form">
+            <div class="input-wrapper">
+              <input type="email" placeholder="Enter your email" required />
+              <div class="input-line"></div>
+            </div>
+            <button type="submit" class="magnetic">
+              <span>Subscribe</span>
+              <div class="button-accent"></div>
+            </button>
+          </form>
+        </div>
+        <div class="newsletter-background">
+          <div class="shape shape-4"></div>
+          <div class="shape shape-5"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" data-scroll-section>
+      <div class="footer-content">
+        <div class="footer-section" data-scroll>
+          <h3 class="reveal-text">About Us</h3>
+          <p>Modern e-commerce platform offering premium products.</p>
+        </div>
+        <div class="footer-section" data-scroll>
+          <h3 class="reveal-text">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#" class="hover-link">Privacy Policy</a></li>
+            <li><a href="#" class="hover-link">Terms of Service</a></li>
+            <li><a href="#" class="hover-link">Shipping Info</a></li>
+            <li><a href="#" class="hover-link">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-section" data-scroll>
+          <h3 class="reveal-text">Contact Us</h3>
+          <p class="contact-info">Email: contact@shopify.com</p>
+          <p class="contact-info">Phone: (555) 123-4567</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2023 Shopify. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Initialize GSAP
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Dramatic header reveal
+      gsap.from(".header", {
+        duration: 1.5,
+        y: -100,
+        opacity: 0,
+        ease: "power2.inOut",
+      });
+
+      gsap.to(".header", {
+        scrollTrigger: {
+          trigger: "body",
+          start: "top top",
+          end: "+=100",
+          toggleClass: { targets: ".header", className: "scrolled" },
+        },
+      });
+
+      // Epic hero entrance
+      const heroTL = gsap.timeline({ defaults: { ease: "power3.out" } });
+
+      heroTL
+        .from(".hero-title", {
+          duration: 2.5,
+          y: 300,
+          opacity: 0,
+          rotationX: 80,
+          transformOrigin: "center",
+          stagger: 0.2,
+        })
+        .from(
+          ".hero-subtitle",
+          {
+            duration: 2,
+            opacity: 0,
+            y: 100,
+            rotationX: 60,
+          },
+          "-=1.5"
+        )
+        .from(
+          ".cta-button",
+          {
+            duration: 1.5,
+            scale: 0,
+            opacity: 0,
+            rotation: 720,
+            ease: "back.out(1.7)",
+          },
+          "-=1"
+        );
+
+      // Cinematic parallax for background elements
+      gsap.utils.toArray(".shape").forEach((shape) => {
+        gsap.to(shape, {
+          scrollTrigger: {
+            trigger: ".hero",
+            start: "top top",
+            end: "bottom top",
+            scrub: 1.5,
+          },
+          y: (i, target) =>
+            -ScrollTrigger.maxScroll(window) * target.dataset.speed * 1.5,
+          rotation: () => Math.random() * 360,
+          ease: "none",
+        });
+      });
+
+      // Product cards with dramatic reveal
+      ScrollTrigger.batch(".product-card", {
+        interval: 0.2,
+        batchMax: 3,
+        onEnter: (batch) => {
+          gsap.from(batch, {
+            autoAlpha: 0,
+            y: 150,
+            scale: 0.7,
+            rotation: () => Math.random() * 20 - 10,
+            stagger: 0.2,
+            duration: 2,
+            ease: "power4.out",
+          });
+        },
+      });
+
+      // Category cards with cinematic 3D effect
+      gsap.utils.toArray(".category-card").forEach((card, i) => {
+        gsap.from(card, {
+          scrollTrigger: {
+            trigger: card,
+            start: "top bottom-=100",
+            toggleActions: "play none none reverse",
+          },
+          duration: 2,
+          scale: 0.5,
+          opacity: 0,
+          rotationY: 90,
+          transformOrigin: i % 2 ? "left center" : "right center",
+          ease: "power2.inOut",
+        });
+      });
+
+      // Newsletter section with ethereal animation
+      const newsletterTL = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".newsletter",
+          start: "top center",
+        },
+      });
+
+      newsletterTL
+        .from(".newsletter-content", {
+          y: 200,
+          opacity: 0,
+          duration: 2,
+          ease: "power3.out",
+        })
+        .to(".newsletter-content", {
+          y: "+=20",
+          duration: 3,
+          repeat: -1,
+          yoyo: true,
+          ease: "sine.inOut",
+        });
+
+      // Footer reveal with cascading effect
+      const footerTL = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".footer",
+          start: "top bottom",
+        },
+      });
+
+      footerTL.from(".footer-section", {
+        y: 100,
+        opacity: 0,
+        duration: 1.5,
+        stagger: 0.3,
+        ease: "power3.out",
+        rotation: () => Math.random() * 10 - 5,
+      });
+
+      // Navigation items with sleek entrance
+      gsap.from(".nav-item", {
+        duration: 1.8,
+        y: -100,
+        opacity: 0,
+        stagger: 0.15,
+        ease: "elastic.out(1, 0.5)",
+        rotation: () => Math.random() * 20 - 10,
+      });
+
+      // Smooth section transitions
+      gsap.utils.toArray("section").forEach((section, i) => {
+        gsap.from(section, {
+          scrollTrigger: {
+            trigger: section,
+            start: "top center+=100",
+            toggleActions: "play none none reverse",
+          },
+          opacity: 0,
+          y: 100,
+          duration: 1.5,
+          ease: "power3.inOut",
+        });
+      });
+
+      // Enhanced image parallax
+      gsap.utils.toArray("img").forEach((img) => {
+        gsap.to(img, {
+          scrollTrigger: {
+            trigger: img,
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 1.5,
+          },
+          y: -100,
+          scale: 1.1,
+          ease: "none",
+        });
+      });
+    </script>
+  </body>
+</html>
